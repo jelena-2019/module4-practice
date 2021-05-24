@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators():
+class BasePageLocators():
     LOGIN_LINK_promo = (By.CSS_SELECTOR, "#registration_link")
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
@@ -15,4 +15,5 @@ class ProductPageLocators():
     ADD_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     BASKET_PRICE = (By.CSS_SELECTOR, ".basket-mini")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".price_color")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_ADDED_MESSAGE = (By.CSS_SELECTOR, ".alertinner")
